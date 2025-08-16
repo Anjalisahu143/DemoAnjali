@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anjali – Portfolio</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --brand:#22d3ee; }
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(120deg,#0f172a,#111827);color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px} nav a:hover{color:var(--brand)}
+    .hero{padding:56px 0;display:grid;gap:12px}
+    .title{font-size:36px;line-height:1.1;margin:0} .sub{color:var(--muted);max-width:60ch}
+    .btns{display:flex;gap:12px;margin-top:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid #334155;color:var(--text);text-decoration:none}
+    .btn.primary{background:var(--brand);color:#0b1020;border:none}
+    section{margin:40px 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .card{background:rgba(255,255,255,0.04);border:1px solid #334155;border-radius:16px;padding:16px}
+    .card h3{margin:0 0 6px 0;font-size:18px}
+    footer{border-top:1px solid #334155;color:var(--muted);padding:20px 0;margin-top:32px;font-size:14px}
+    @media (max-width:600px){ .title{font-size:28px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <strong>Anjali</strong>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1 class="title">Hi, I’m Anjali 👋</h1>
+      <p class="sub">I build clean, simple web apps focused on health & environment. Here are a few projects I’m proud of.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:you@example.com">Hire me</a>
+        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Air Quality Tracker</h3>
+          <p>Simple PWA showing AQI by city with offline cache.</p>
+          <a class="btn" href="#" target="_blank">Live</a>
+          <a class="btn" href="#" target="_blank">Code</a>
+        </article>
+        <article class="card">
+          <h3>Habit Health</h3>
+          <p>Daily habits with reminders & streaks.</p>
+          <a class="btn" href="#" target="_blank">Live</a>
+          <a class="btn" href="#" target="_blank">Code</a>
+        </article>
+        <article class="card">
+          <h3>Water Saver</h3>
+          <p>Household water-use tips + calculator.</p>
+          <a class="btn" href="#" target="_blank">Live</a>
+          <a class="btn" href="#" target="_blank">Code</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="card">
+        <p>Front-end dev focused on accessible, fast sites. Interested in health & environment apps for the next generation.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card"><strong>Frontend:</strong> HTML, CSS, JS</div>
+        <div class="card"><strong>Tools:</strong> Git, GitHub, VS Code</div>
+        <div class="card"><strong>Learning:</strong> React, APIs, PWAs</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>LinkedIn: <a href="#" target="_blank" rel="noreferrer">Your Profile</a></p>
+      </div>
+    </section>
+
+    <footer>© <span id="y"></span> Anjali — Built with GitHub Pages</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
